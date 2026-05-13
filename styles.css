@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "NTYPE82";
+  src:
+    local("NTYPE82"),
+    local("NType82"),
+    url("assets/fonts/NType82-Regular.otf") format("opentype");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NTYPE82 Headline";
+  src:
+    local("NType82 Headline"),
+    url("assets/fonts/NType82-Headline.otf") format("opentype");
+  font-weight: 600 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #090d18;
   --bg-2: #0f1527;
@@ -153,7 +174,7 @@ h1,
 h2,
 h3,
 .quote-card p {
-  font-family: "NTYPE82", "Syne", sans-serif;
+  font-family: "NTYPE82 Headline", "NTYPE82", "Syne", sans-serif;
   margin: 0;
 }
 
