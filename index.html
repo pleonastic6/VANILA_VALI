@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-theme="midnight">
     <div class="grid-lines"></div>
     <div class="glow glow-left"></div>
     <div class="glow glow-right"></div>
@@ -27,10 +27,23 @@
           <span class="brand-mark">VV</span>
           <span class="brand-name">VANILA VALI</span>
         </div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#structure">Structure</a>
-          <a href="#launch">Launch</a>
+
+        <div class="nav-meta">
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#structure">Structure</a>
+            <a href="#launch">Launch</a>
+          </div>
+
+          <div class="theme-switcher" aria-label="Designvarianten">
+            <button class="theme-button is-active" type="button" data-theme-option="midnight">Midnight</button>
+            <button class="theme-button" type="button" data-theme-option="sunset">Sunset</button>
+            <button class="theme-button" type="button" data-theme-option="jade">Jade</button>
+            <button class="theme-button" type="button" data-theme-option="mono">Mono</button>
+            <button class="theme-button" type="button" data-theme-option="luxury">Luxury</button>
+            <button class="theme-button" type="button" data-theme-option="cyber">Cyber</button>
+            <button class="theme-button" type="button" data-theme-option="miami">Miami</button>
+          </div>
         </div>
       </nav>
 
@@ -63,7 +76,7 @@
         <div class="hero-card panel">
           <div class="hero-card-top">
             <span class="mini-label">IDENTITY FRAME</span>
-            <span class="status-dot">LIVE CONCEPT</span>
+            <span class="status-dot" id="theme-label">MIDNIGHT SYSTEM</span>
           </div>
           <div class="hero-figure">
             <div class="halo"></div>
@@ -168,5 +181,46 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const themeLabels = {
+        midnight: 'MIDNIGHT SYSTEM',
+        sunset: 'SUNSET HEAT',
+        jade: 'JADE TROPIC',
+        mono: 'MONO SIGNAL',
+        luxury: 'LUXURY PALM',
+        cyber: 'CYBER SIGNAL',
+        miami: 'MIAMI GLOW'
+      };
+
+      const body = document.body;
+      const label = document.getElementById('theme-label');
+      const buttons = document.querySelectorAll('[data-theme-option]');
+      const storageKey = 'vali-theme';
+
+      function applyTheme(theme) {
+        body.dataset.theme = theme;
+        label.textContent = themeLabels[theme] || 'LIVE CONCEPT';
+
+        buttons.forEach((button) => {
+          button.classList.toggle('is-active', button.dataset.themeOption === theme);
+        });
+
+        try {
+          localStorage.setItem(storageKey, theme);
+        } catch {}
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => applyTheme(button.dataset.themeOption));
+      });
+
+      try {
+        const savedTheme = localStorage.getItem(storageKey);
+        if (savedTheme && themeLabels[savedTheme]) {
+          applyTheme(savedTheme);
+        }
+      } catch {}
+    </script>
   </body>
 </html>
