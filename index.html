@@ -16,181 +16,206 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body data-theme="midnight">
+  <body data-theme="sunset">
     <div class="grid-lines"></div>
     <div class="glow glow-left"></div>
     <div class="glow glow-right"></div>
 
-    <header class="hero">
-      <nav class="nav">
-        <div class="brand">
-          <span class="brand-mark">VV</span>
-          <span class="brand-name">VANILA VALI</span>
-        </div>
+    <header class="site-header">
+      <div class="nav-shell">
+        <nav class="nav">
+          <a class="brand" href="#top" aria-label="Vanila Vali Startseite">
+            <span class="brand-mark">VV</span>
+            <span class="brand-copy">
+              <strong class="brand-name">VANILA VALI</strong>
+              <span class="brand-sub">character-led memecoin</span>
+            </span>
+          </a>
 
-        <div class="nav-meta">
-          <div class="nav-links">
+          <div class="nav-center">
             <a href="#about">About</a>
-            <a href="#structure">Structure</a>
+            <a href="#story">Story</a>
             <a href="#launch">Launch</a>
+            <a href="#faq">FAQ</a>
           </div>
 
-          <div class="theme-switcher" aria-label="Designvarianten">
-            <button class="theme-button is-active" type="button" data-theme-option="midnight">Midnight</button>
-            <button class="theme-button" type="button" data-theme-option="sunset">Sunset</button>
-            <button class="theme-button" type="button" data-theme-option="jade">Jade</button>
-            <button class="theme-button" type="button" data-theme-option="mono">Mono</button>
-            <button class="theme-button" type="button" data-theme-option="luxury">Luxury</button>
-            <button class="theme-button" type="button" data-theme-option="cyber">Cyber</button>
-            <button class="theme-button" type="button" data-theme-option="miami">Miami</button>
+          <div class="nav-actions">
+            <div class="theme-switcher" aria-label="Designvarianten">
+              <button class="theme-button is-active" type="button" data-theme-option="sunset">Sunset</button>
+              <button class="theme-button" type="button" data-theme-option="luxury">Luxury</button>
+            </div>
+            <a class="nav-cta" href="#launch">View concept</a>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
-      <section class="hero-grid">
+      <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">Character-led memecoin branding</p>
-          <h1>Vanila Vali braucht kein Clown-Kostüm, um aufzufallen.</h1>
+          <p class="eyebrow">Tropical aura · meme precision · main character energy</p>
+          <h1>Vanila Vali ist die Figur. Der Coin kommt danach.</h1>
           <p class="lead">
-            Der Kern ist nicht „haha random coin“, sondern ein Character mit Haltung:
-            tropisch, smooth, leicht drüber — aber visuell sauber, klar gebaut und mit echter Präsenz.
+            Statt dem nächsten austauschbaren Meme-Coin braucht Vali eine klare Figur,
+            einen eigenständigen Look und eine Website, die sich nicht wie ein Zufall anfühlt.
           </p>
 
-          <div class="cta-row">
-            <a class="button primary" href="#launch">Launch setup</a>
-            <a class="button secondary" href="#structure">Brand structure</a>
+          <div class="hero-actions">
+            <a class="button primary" href="#about">Explore the brand</a>
+            <a class="button secondary" href="#launch">See launch framing</a>
           </div>
 
-          <div class="signal-row">
-            <div>
-              <strong>Archetype</strong>
-              <span>Palm-rich main character</span>
-            </div>
+          <div class="hero-facts">
             <div>
               <strong>Positioning</strong>
-              <span>mature meme brand, not cartoon spam</span>
+              <span>recognizable, stylish, slightly dangerous</span>
+            </div>
+            <div>
+              <strong>Current mode</strong>
+              <span id="theme-label">SUNSET HEAT</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-card panel">
-          <div class="hero-card-top">
+        <div class="hero-visual panel">
+          <div class="visual-topline">
             <span class="mini-label">IDENTITY FRAME</span>
-            <span class="status-dot" id="theme-label">MIDNIGHT SYSTEM</span>
+            <span class="visual-status">LIVE CONCEPT</span>
           </div>
+
           <div class="hero-figure">
             <div class="halo"></div>
             <div class="figure-head"></div>
             <div class="figure-glasses"></div>
             <div class="figure-shirt"></div>
           </div>
-          <div class="hero-card-bottom">
+
+          <div class="visual-caption">
             <strong>Vanila Vali</strong>
-            <p>Stylish chaos, controlled presentation, built for repeatable meme identity.</p>
+            <p>Ein Charakter mit Stil, Haltung und genug Wiedererkennungswert für echte Meme-Identität.</p>
           </div>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="metrics panel">
-        <div>
-          <strong>01</strong>
-          <span>Cleaner typography</span>
+      <section class="content-intro" id="about">
+        <div class="section-heading">
+          <p class="section-tag">About</p>
+          <h2>Die Seite braucht nicht nur Look. Sie braucht Hierarchie.</h2>
         </div>
-        <div>
-          <strong>02</strong>
-          <span>Sharper section hierarchy</span>
-        </div>
-        <div>
-          <strong>03</strong>
-          <span>Less childish, more intentional</span>
-        </div>
-        <div>
-          <strong>04</strong>
-          <span>Ready for ticker + socials + contract</span>
-        </div>
-      </section>
 
-      <section class="section split" id="about">
-        <div>
-          <p class="section-tag">About the character</p>
-          <h2>Vali funktioniert, wenn man ihn wie eine Figur behandelt — nicht wie einen Gag.</h2>
-          <p>
-            Er ist nicht laut um jeden Preis. Eher die Sorte Charakter, die einen Raum betritt,
-            komplett unbeeindruckt wirkt und genau deshalb hängenbleibt.
-          </p>
-          <p>
-            Das Palm-/Nightlife-Motiv bleibt, aber kontrollierter: weniger Kirmes, mehr Stil.
-            So kann daraus eine Marke werden, die Memes trägt, statt von ihnen verschluckt zu werden.
-          </p>
-        </div>
-        <aside class="panel aside-card">
-          <span class="mini-label">CORE TRAITS</span>
-          <ul>
-            <li>tropisch, aber nicht goofy</li>
-            <li>selbstsicher, aber nicht hektisch</li>
-            <li>memeable, aber mit Form</li>
-          </ul>
-        </aside>
-      </section>
-
-      <section class="section" id="structure">
-        <p class="section-tag">Structure</p>
-        <h2>Der Auftritt braucht klare Ebenen.</h2>
-        <div class="grid three">
-          <article class="panel feature-card">
-            <span class="feature-index">01</span>
-            <h3>Character</h3>
-            <p>Vali als visuelle und sprachliche Leitfigur. Alles zahlt auf seine Persona ein.</p>
+        <div class="intro-grid">
+          <article class="panel intro-card large">
+            <span class="mini-label">Core idea</span>
+            <p>
+              Vanila Vali funktioniert nur, wenn zuerst die Figur sitzt: cool, kontrolliert,
+              leicht überheblich, tropisch aufgeladen — aber nie albern.
+            </p>
           </article>
-          <article class="panel feature-card">
-            <span class="feature-index">02</span>
-            <h3>Brand system</h3>
-            <p>Typografie, Farben, Claims und Motive müssen konsistent wirken — nicht zusammengewürfelt.</p>
+          <article class="panel intro-card">
+            <span class="mini-label">Why it works</span>
+            <p>Ein Coin ohne Charakter ist nur Rauschen. Vali kann hängenbleiben, weil die Persona trägt.</p>
           </article>
-          <article class="panel feature-card">
-            <span class="feature-index">03</span>
-            <h3>Coin layer</h3>
-            <p>Ticker, Contract, Socials und Launch-Elemente kommen oben drauf, statt die Identität zu ersetzen.</p>
+          <article class="panel intro-card">
+            <span class="mini-label">Visual lane</span>
+            <p>Warme Hitze oder luxuriöse Nachtwelt — beides passt, solange die Identität konsistent bleibt.</p>
           </article>
         </div>
       </section>
 
-      <section class="section split" id="launch">
-        <div>
-          <p class="section-tag">Launch framing</p>
-          <h2>Was als Nächstes drauf sollte</h2>
-          <div class="stack-list">
-            <div class="stack-item panel">
-              <strong>Ticker + Contract</strong>
-              <p>Sobald vorhanden, prominent in die Hero-Zone und als Copy-Block darunter.</p>
-            </div>
-            <div class="stack-item panel">
-              <strong>Social links</strong>
-              <p>X, Telegram, ggf. Website CTA — ohne tote Platzhalter, nur wenn die Handles wirklich stehen.</p>
-            </div>
-            <div class="stack-item panel">
-              <strong>Real artwork</strong>
-              <p>Spätestens als nächste Iteration: echtes Vali-Artwork statt abstrakter Placeholder-Figur.</p>
-            </div>
+      <section class="story-section" id="story">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-tag">Story</p>
+            <h2>Vali ist kein Witz-Charakter. Eher Internet-Mythos mit Urlaubsschaden.</h2>
           </div>
+          <p class="section-copy">
+            Die Marke lebt von Präsenz: Sonnenuntergang, Nachtleben, ein bisschen Ego, ein bisschen Absurdität.
+            Nicht zu laut, aber so gebaut, dass man sie wiedererkennt.
+          </p>
         </div>
-        <div class="panel quote-card">
-          <p>„Memecoins sterben an Beliebigkeit. Vali darf ruhig komisch sein — aber nie austauschbar.“</p>
+
+        <div class="story-grid">
+          <article class="panel story-card quote-card">
+            <p>„Wenn ein Memecoin eine Hauptfigur haben darf, dann sollte sie nicht generisch wirken.“</p>
+          </article>
+          <article class="panel story-card">
+            <span class="feature-index">01</span>
+            <h3>Character first</h3>
+            <p>Alle Assets, Claims und Memes sollten sich wie Ausläufer derselben Figur anfühlen.</p>
+          </article>
+          <article class="panel story-card">
+            <span class="feature-index">02</span>
+            <h3>Controlled tone</h3>
+            <p>Nicht schrill um jeden Preis. Lieber kühl, stylisch und gezielt etwas drüber.</p>
+          </article>
+          <article class="panel story-card">
+            <span class="feature-index">03</span>
+            <h3>Repeatable identity</h3>
+            <p>Der Look muss für Artworks, Social Posts, Website und Launch-Material weitertragbar sein.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="launch-section" id="launch">
+        <div class="section-heading">
+          <p class="section-tag">Launch framing</p>
+          <h2>Wenn der Coin kommt, muss die Struktur schon stehen.</h2>
+        </div>
+
+        <div class="launch-grid">
+          <div class="launch-column">
+            <article class="panel stack-card">
+              <strong>Ticker & contract</strong>
+              <p>Gehören später prominent in die Hero-Zone — nicht versteckt irgendwo unten.</p>
+            </article>
+            <article class="panel stack-card">
+              <strong>Social layer</strong>
+              <p>X, Telegram und Community-Touchpoints sollten wie Teil der Figur wirken, nicht wie Pflichtfelder.</p>
+            </article>
+            <article class="panel stack-card">
+              <strong>Artwork system</strong>
+              <p>Als nächster großer Schritt braucht Vali echtes Key-Art statt Placeholder-Illustration.</p>
+            </article>
+          </div>
+
+          <aside class="panel launch-side">
+            <span class="mini-label">Current recommendation</span>
+            <h3>Sunset für Hype, Luxury für Premium-Richtung.</h3>
+            <p>
+              Sunset ist emotionaler und internetiger. Luxury wirkt teurer und markiger.
+              Genau diese beiden Richtungen sind stark genug, um weiter ausgebaut zu werden.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-heading">
+          <p class="section-tag">FAQ</p>
+          <h2>Was hier als Nächstes sinnvoll wäre</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="panel faq-item">
+            <strong>Was fehlt noch am meisten?</strong>
+            <p>Echtes Artwork. Danach Ticker, Contract, Socials und konkrete Community-CTAs.</p>
+          </article>
+          <article class="panel faq-item">
+            <strong>Welche Richtung ist stärker?</strong>
+            <p>Für Memecoin-Energie eher Sunset. Für Brand-Punch und edleren Look eher Luxury.</p>
+          </article>
+          <article class="panel faq-item">
+            <strong>Worauf sollte man vermeiden reinzufallen?</strong>
+            <p>Zu viele Gags, zu wenig Identität. Dann sieht’s sofort wieder nach 08/15-Coin aus.</p>
+          </article>
         </div>
       </section>
     </main>
 
     <script>
       const themeLabels = {
-        midnight: 'MIDNIGHT SYSTEM',
         sunset: 'SUNSET HEAT',
-        jade: 'JADE TROPIC',
-        mono: 'MONO SIGNAL',
-        luxury: 'LUXURY PALM',
-        cyber: 'CYBER SIGNAL',
-        miami: 'MIAMI GLOW'
+        luxury: 'LUXURY PALM'
       };
 
       const body = document.body;
